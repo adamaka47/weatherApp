@@ -1,0 +1,50 @@
+*, *::after, *::before
+    box-sizing: border-box
+    
+body
+    margin: 0
+    padding: 0
+
+.main
+    background-color: #112211
+    min-height: 100vh
+    padding: 20px 0px
+    width: 100%
+    color: #222
+    font-family: monospace, sans-serif
+    padding-top: 150px
+    &__title
+        margin: 0
+        font-size: 40px
+        text-align: center
+        margin-bottom: 15px
+        color: #ffffff
+    &-form
+        background-color: aqua
+        max-width: 420px
+        margin: 0 auto
+        padding: 15px
+        display: flex
+        justify-content: center
+        &__int
+            background-color: #222222
+            color: #ffffff
+            border: none
+            padding: 7px 12px
+            font-family: monospace, serif
+            font-size: 18px
+            outline: none
+            &::placeholder
+                color: #ffffff
+        &__btn
+            @extend .main-form__int
+            color: #222
+            background-color: indigo
+            color: #aaff88
+            cursor: pointer
+            transition: 0.4s
+            border-left: 1px solid transparent
+            &:hover
+                background-color: #222222
+                color: #fea100
+                border-left: 1px solid aqua
