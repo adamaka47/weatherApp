@@ -27,8 +27,8 @@ gulp.task('sass', function(e) {
     return gulp.src('./src/main.sass')
         .pipe(sass())
         .pipe(autopref())
-        .pipe(csso())
         .pipe(gulp.dest('./src'))
+        .pipe(csso())
         .pipe(gulp.dest('./dist'))
         .pipe(bs.stream());
 });
